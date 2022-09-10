@@ -1,5 +1,6 @@
 import sys
 from math import log
+import re
 
 file = sys.argv[1]
 
@@ -9,11 +10,12 @@ with open(file, 'r') as f:
 ns = []
 total = 0
 fail = False
-
+pattern = r'\s+'
 for l in ls:
     if l[0] != '#':
         try:
-            n = int(l.strip())
+            first_col = re.split(pattern, l)[0]
+            n = int(first_col.strip())
             ns.append(n)
             total += n
         except:
