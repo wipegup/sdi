@@ -1,0 +1,7 @@
+5
+12
+2
+5
+1
+# Should be 1.3269
+# https://www.omnicalculator.com/ecology/shannon-index#how-to-calculate-the-shannon-diversity-index
